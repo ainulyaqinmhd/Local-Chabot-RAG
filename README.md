@@ -25,8 +25,8 @@ This project implements a local Retrieval-Augmented Generation (RAG) chatbot, en
 - **Python 3.10+**
 - **LangChain**: Framework for building applications with LLMs.
 - **Chroma**: Open-source vector database for storing embeddings.
-- **LM Studio**: Interface for running local LLMs.
 - **Sentence-Transformers**: For generating embeddings from text.
+
 ---
 
 ## 🚀 Getting Started
@@ -34,7 +34,6 @@ This project implements a local Retrieval-Augmented Generation (RAG) chatbot, en
 ### Prerequisites
 
 - Install [Miniconda](https://docs.anaconda.com/free/miniconda/index.html)
-- Install [LM Studio](https://lmstudio.ai/) ([grasool/Local-RAG-Chatbot - GitHub](https://github.com/grasool/Local-RAG-Chatbot?utm_source=chatgpt.com))
 
 ### Installation
 
@@ -55,19 +54,14 @@ This project implements a local Retrieval-Augmented Generation (RAG) chatbot, en
    pip install -r requirements.txt
    ```
 
-4. **Set Up LM Studio**:
-   - Launch LM Studio.
-   - Download and load your preferred LLM (e.g., Mistral 7B, LLaMA 2).
-   - Start the LM Studio server with default settings. ([grasool/Local-RAG-Chatbot - GitHub](https://github.com/grasool/Local-RAG-Chatbot?utm_source=chatgpt.com))
-
-5. **Prepare Your Documents**:
+4. **Prepare Your Documents**:
    - Place your PDF files in a designated directory.
    - Run the following script to create the vector database:
      ```bash
      python vector-db-create.py
      ```
 
-6. **Run the Chatbot**:
+5. **Run the Chatbot**:
    ```bash
    python RAG-chatbot.py
    ```
@@ -79,7 +73,23 @@ This project implements a local Retrieval-Augmented Generation (RAG) chatbot, en
 - **`RAG-chatbot.py`**: Main script to initiate the chatbot interface.
 - **`qa-only.py`**: Script for testing question-answering functionalities.
 - **`vector-db-create.py`**: Processes documents and creates the vector database.
-- **`requirements.txt`**: List of Python dependencies. 
+- **`Chatbot_RAG.ipynb`**: Jupyter notebook demonstrating RAG concepts.
+- **`requirements.txt`**: List of Python dependencies.
+
+---
+
+## 🔄 Workflow Architecture
+
+The chatbot operates through the following workflow:
+
+1. **Document Loading**: PDF documents are loaded and processed.
+2. **Text Splitting**: Documents are split into manageable chunks.
+3. **Embedding Generation**: Each chunk is converted into a vector embedding using Sentence-Transformers.
+4. **Vector Storage**: Embeddings are stored in Chroma, a vector database.
+5. **User Query Processing**: User inputs a question.
+6. **Similarity Search**: The system retrieves relevant document chunks from Chroma based on the query.
+7. **Response Generation**: The retrieved context is passed to the LLM to generate a response. 
+
 ---
 
 ## 📄 License
