@@ -6,7 +6,7 @@
 
 ## 🧠 Project Overview
 
-This project implements a local Retrieval-Augmented Generation (RAG) chatbot, enabling users to interact with their documents through natural language queries. By leveraging local Large Language Models (LLMs) and vector databases, the chatbot ensures data privacy and efficient information retrieval without relying on external APIs. ([Local RAG Chat with Documents | Enrico Nello](https://enricollen.github.io/posts/Local-RAG-Chatbot/?utm_source=chatgpt.com), [grasool/Local-RAG-Chatbot - GitHub](https://github.com/grasool/Local-RAG-Chatbot?utm_source=chatgpt.com))
+This project implements a local Retrieval-Augmented Generation (RAG) chatbot, enabling users to interact with their documents through natural language queries. By leveraging local Large Language Models (LLMs) and vector databases, the chatbot ensures data privacy and efficient information retrieval without relying on external APIs.
 
 ---
 
@@ -16,7 +16,7 @@ This project implements a local Retrieval-Augmented Generation (RAG) chatbot, en
 - **Document Ingestion**: Processes various document formats, converting them into searchable embeddings.
 - **Vector Database Integration**: Utilizes Chroma for efficient storage and retrieval of document embeddings.
 - **Flexible LLM Support**: Compatible with models from LM Studio, allowing easy switching between different LLMs.
-- **Interactive Q&A**: Engage in conversational queries, receiving contextually relevant answers based on your documents. ([Local RAG Chat with Documents | Enrico Nello](https://enricollen.github.io/posts/Local-RAG-Chatbot/?utm_source=chatgpt.com), [grasool/Local-RAG-Chatbot - GitHub](https://github.com/grasool/Local-RAG-Chatbot?utm_source=chatgpt.com))
+- **Interactive Q&A**: Engage in conversational queries, receiving contextually relevant answers based on your documents.
 
 ---
 
@@ -26,8 +26,7 @@ This project implements a local Retrieval-Augmented Generation (RAG) chatbot, en
 - **LangChain**: Framework for building applications with LLMs.
 - **Chroma**: Open-source vector database for storing embeddings.
 - **LM Studio**: Interface for running local LLMs.
-- **Sentence-Transformers**: For generating embeddings from text. ([SuperEasy 100% Local RAG with Ollama + Email RAG - GitHub](https://github.com/AllAboutAI-YT/easy-local-rag?utm_source=chatgpt.com), [Local RAG Chat with Documents | Enrico Nello](https://enricollen.github.io/posts/Local-RAG-Chatbot/?utm_source=chatgpt.com), [curiousily/ragbase: Completely local RAG. Chat with your ... - GitHub](https://github.com/curiousily/ragbase?utm_source=chatgpt.com))
-
+- **Sentence-Transformers**: For generating embeddings from text.
 ---
 
 ## 🚀 Getting Started
@@ -80,8 +79,7 @@ This project implements a local Retrieval-Augmented Generation (RAG) chatbot, en
 - **`RAG-chatbot.py`**: Main script to initiate the chatbot interface.
 - **`qa-only.py`**: Script for testing question-answering functionalities.
 - **`vector-db-create.py`**: Processes documents and creates the vector database.
-- **`requirements.txt`**: List of Python dependencies. ([Local RAG Chat with Documents | Enrico Nello](https://enricollen.github.io/posts/Local-RAG-Chatbot/?utm_source=chatgpt.com), [grasool/Local-RAG-Chatbot - GitHub](https://github.com/grasool/Local-RAG-Chatbot?utm_source=chatgpt.com), [Retrieval-Augmented Generation (RAG) Chatbots: The Future of Customer ...](https://yourgpt.ai/blog/general/retrieval-augmented-generation-rag-chatbots-the-future-of-customer-support-solutions-with-yourgpt-chatbot?utm_source=chatgpt.com))
-
+- **`requirements.txt`**: List of Python dependencies. 
 ---
 
 ## 📄 License
